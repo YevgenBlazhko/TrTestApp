@@ -1,0 +1,35 @@
+query GetRepositoryInfo($repositoryId: ID!) {
+    node(id: $repositoryId) {
+        ... on Repository {
+            name
+            owner {
+                login
+                avatarUrl
+            }
+            stargazers {
+                totalCount
+            }
+            forks {
+                totalCount
+            }
+            issues {
+                totalCount
+            }
+            pullRequests {
+                totalCount
+            }
+            watchers {
+                totalCount
+            }
+            description
+            primaryLanguage {
+                name
+            }
+            licenseInfo {
+                name
+            }
+        }
+    }
+}
+
+

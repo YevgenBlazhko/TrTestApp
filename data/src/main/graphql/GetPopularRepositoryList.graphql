@@ -1,0 +1,28 @@
+query GetPopularRepositoryList ($query: String!, $endCursor: String) {
+    search(
+        query: $query,
+        type: REPOSITORY,
+        first: 20,
+        after: $endCursor
+    ) {
+        nodes {
+            ... on Repository {
+                name
+                id
+                owner {
+                    login
+                    avatarUrl
+                }
+                stargazers {
+                    totalCount
+                }
+            }
+        }
+        pageInfo {
+            startCursor
+            endCursor
+            hasNextPage
+            hasPreviousPage
+        }
+    }
+}
