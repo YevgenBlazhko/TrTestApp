@@ -16,7 +16,7 @@ class ApolloProvider {
             .serverUrl(SERVER_URL)
             .addHttpHeader(
                 HEADER_AUTHORIZATION,
-                "$HEADER_AUTHORIZATION_BEARER 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"
+                "$HEADER_AUTHORIZATION_BEARER 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"
             )
             .okHttpClient(getOkHttpClient())
             .build()

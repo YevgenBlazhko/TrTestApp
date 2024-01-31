@@ -5,8 +5,8 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.tr_test_app.DataConnect
-import com.example.tr_test_app.model.PageInfo
 import com.example.tr_test_app.intent.ReposListIntent
+import com.example.tr_test_app.model.PageInfo
 import com.example.tr_test_app.view.repos_list_screen.models.ReposListResponse
 import com.example.tr_test_app.viewstate.ViewState
 import kotlinx.coroutines.channels.Channel
